@@ -1,5 +1,7 @@
 package HomeWorkJavaBasic;
 
+import java.util.Arrays;
+
 public class exerciseArrayHomeWork {
 
 	public static void main(String[] args) {
@@ -85,6 +87,19 @@ public class exerciseArrayHomeWork {
 //
 //		int[] noDuplicates = Arrays.stream(randArray).distinct().toArray();
 //		System.out.println(Arrays.toString(noDuplicates));
+
+//		exercise Enosh video:
+
+		String[] Friends = { "Niv", " ", "Sun", "   ", "", "Shai" };
+
+		for (int i = 0; i < Friends.length; i++) {
+			if (Friends[i].trim().isEmpty()) {
+				Friends[i] = "tamir";
+			}
+		}
+		Friends[Friends.length - 3] = "Amit";
+		System.out.println(Arrays.deepToString(Friends));
+
 	}
 
 }
